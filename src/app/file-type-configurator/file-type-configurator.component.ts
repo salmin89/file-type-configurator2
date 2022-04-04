@@ -18,8 +18,7 @@ export class FileTypeConfiguratorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const clone = JSON.parse(JSON.stringify(this.value));
-    this.buildForm(clone);
+    this.buildForm(this.value);
   }
 
   buildForm(value: FilesFormatsDefinitionConfig) {
