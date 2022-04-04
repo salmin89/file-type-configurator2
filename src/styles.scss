@@ -1,1 +1,13 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 /* You can add global styles to this file, and also import other style files */
+svg.bi-chevron-down {
+  transition: all 0.2s ease-in-out;
+}
+button.collapsed > svg.bi-chevron-down { 
+  transform: rotate(180deg);
+}
+
+.ng-invalid {
+  @extend .is-invalid;
+}
